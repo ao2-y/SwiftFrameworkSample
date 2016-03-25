@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SampleAppForSwift/SampleAppForSwift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SwiftSampleFramework/SwiftSampleFramework.xcodeproj">
+   </FileRef>
+</Workspace>
