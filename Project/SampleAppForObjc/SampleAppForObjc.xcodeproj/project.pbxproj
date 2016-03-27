@@ -15,6 +15,7 @@
 		BFAD9FF21CA6E12000FB588F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAD9FF01CA6E12000FB588F /* LaunchScreen.storyboard */; };
 		BFAD9FFD1CA6E12000FB588F /* SampleAppForObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAD9FFC1CA6E12000FB588F /* SampleAppForObjcTests.m */; };
 		BFADA0081CA6E12000FB588F /* SampleAppForObjcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADA0071CA6E12000FB588F /* SampleAppForObjcUITests.m */; };
+		BFADA0161CA6E1C000FB588F /* SwiftSampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFADA0151CA6E1C000FB588F /* SwiftSampleFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BFADA0031CA6E12000FB588F /* SampleAppForObjcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppForObjcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFADA0071CA6E12000FB588F /* SampleAppForObjcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppForObjcUITests.m; sourceTree = "<group>"; };
 		BFADA0091CA6E12000FB588F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFADA0151CA6E1C000FB588F /* SwiftSampleFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSampleFramework.framework; path = "../DerivedData/SwiftSample/Build/Products/Debug-iphonesimulator/SwiftSampleFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFADA0161CA6E1C000FB588F /* SwiftSampleFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		BFAD9FD61CA6E12000FB588F = {
 			isa = PBXGroup;
 			children = (
+				BFADA0151CA6E1C000FB588F /* SwiftSampleFramework.framework */,
 				BFAD9FE11CA6E12000FB588F /* SampleAppForObjc */,
 				BFAD9FFB1CA6E12000FB588F /* SampleAppForObjcTests */,
 				BFADA0061CA6E12000FB588F /* SampleAppForObjcUITests */,
@@ -348,6 +352,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -392,6 +397,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -496,6 +502,7 @@
 				BFADA00E1CA6E12000FB588F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFADA00F1CA6E12000FB588F /* Build configuration list for PBXNativeTarget "SampleAppForObjcTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				BFADA0111CA6E12000FB588F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFADA0121CA6E12000FB588F /* Build configuration list for PBXNativeTarget "SampleAppForObjcUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				BFADA0141CA6E12000FB588F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
