@@ -9,4 +9,4 @@
 * 素数計算
 https://swiftlang.ng.bluemix.net/#/repl/b8400baf15d595384f82400ee7e0603fe060a9096cfca64163821fb6e5126091
 * ソート
-http://swiftlang.ng.bluemix.net/#/repl/4067af13e9bbec063806f9e2677f3981d184302d14c4b288d3e36a749c98c5c2
+http://swiftlang.ng.bluemix.net/#/repl/46c479102b2902d11a7282cc7dfbf3067ac7a16762b49fde8a4c0efe6d4e1566
