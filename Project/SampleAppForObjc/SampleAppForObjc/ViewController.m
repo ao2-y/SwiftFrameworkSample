@@ -19,7 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [SampleClass test];
+    SampleObject *so = [[SampleObject alloc]init];
+//    [SampleClass test];
 }
 
 - (void)didReceiveMemoryWarning {

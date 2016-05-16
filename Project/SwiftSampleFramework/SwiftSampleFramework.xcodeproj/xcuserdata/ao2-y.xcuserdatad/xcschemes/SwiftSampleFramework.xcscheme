@@ -26,13 +26,14 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BFEFC2461CA59E6A00894285"
+               BlueprintIdentifier = "BF9FF1C91CEA1C22003A04D8"
                BuildableName = "SwiftSampleFrameworkTests.xctest"
                BlueprintName = "SwiftSampleFrameworkTests"
                ReferencedContainer = "container:SwiftSampleFramework.xcodeproj">
@@ -74,11 +75,17 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "2">
+      <RemoteRunnable
+         runnableDebuggingMode = "1"
+         BundleIdentifier = "com.your.company.SampleAppForSwift"
+         RemotePath = "/Users/ao2-y/Library/Developer/CoreSimulator/Devices/E1E62D61-FFF6-4047-BF48-F9533280FDEE/data/Containers/Bundle/Application/75F16BF1-18B6-4517-9572-8042CDC5DAD6/SampleAppForSwift.app">
+      </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"

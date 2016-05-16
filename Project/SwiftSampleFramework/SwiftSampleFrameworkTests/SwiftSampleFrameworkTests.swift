@@ -2,12 +2,11 @@
 //  SwiftSampleFrameworkTests.swift
 //  SwiftSampleFrameworkTests
 //
-//  Created by ao2-y on 2016/03/26.
+//  Created by ao2-y on 2016/05/17.
 //  Copyright © 2016年 ao2-y. All rights reserved.
 //
 
 import XCTest
-@testable import SwiftSampleFramework
 
 class SwiftSampleFrameworkTests: XCTestCase {
     

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFAD9FD51CA6E0E900FB588F /* SwiftSampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAD9FD41CA6E0E900FB588F /* SwiftSampleFramework.framework */; };
+		BF9FF1D61CEA2227003A04D8 /* SwiftSampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9FF1D51CEA2227003A04D8 /* SwiftSampleFramework.framework */; };
+		BF9FF1D71CEA2227003A04D8 /* SwiftSampleFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF9FF1D51CEA2227003A04D8 /* SwiftSampleFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFEFC2AE1CA59FE700894285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEFC2AD1CA59FE700894285 /* AppDelegate.swift */; };
 		BFEFC2B01CA59FE700894285 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEFC2AF1CA59FE700894285 /* ViewController.swift */; };
 		BFEFC2B31CA59FE800894285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFEFC2B11CA59FE800894285 /* Main.storyboard */; };
@@ -34,8 +35,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BF9FF1D81CEA2227003A04D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF9FF1D71CEA2227003A04D8 /* SwiftSampleFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		BFAD9FD41CA6E0E900FB588F /* SwiftSampleFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSampleFramework.framework; path = "../DerivedData/SwiftSample/Build/Products/Debug-iphoneos/SwiftSampleFramework.framework"; sourceTree = "<group>"; };
+		BF9FF1D51CEA2227003A04D8 /* SwiftSampleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftSampleFramework.framework; path = "/Users/ao2-y/Library/Developer/Xcode/DerivedData/SwiftSample-bthyxnuaqrrbqgefuavwlqletfta/Build/Products/Debug-iphonesimulator/SwiftSampleFramework.framework"; sourceTree = "<absolute>"; };
 		BFEFC2AA1CA59FE700894285 /* SampleAppForSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppForSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEFC2AD1CA59FE700894285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFEFC2AF1CA59FE700894285 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFAD9FD51CA6E0E900FB588F /* SwiftSampleFramework.framework in Frameworks */,
+				BF9FF1D61CEA2227003A04D8 /* SwiftSampleFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +95,7 @@
 		BFEFC2A11CA59FE700894285 = {
 			isa = PBXGroup;
 			children = (
-				BFAD9FD41CA6E0E900FB588F /* SwiftSampleFramework.framework */,
+				BF9FF1D51CEA2227003A04D8 /* SwiftSampleFramework.framework */,
 				BFEFC2AC1CA59FE700894285 /* SampleAppForSwift */,
 				BFEFC2C11CA59FE800894285 /* SampleAppForSwiftTests */,
 				BFEFC2CC1CA59FE800894285 /* SampleAppForSwiftUITests */,
@@ -139,6 +154,7 @@
 				BFEFC2A61CA59FE700894285 /* Sources */,
 				BFEFC2A71CA59FE700894285 /* Frameworks */,
 				BFEFC2A81CA59FE700894285 /* Resources */,
+				BF9FF1D81CEA2227003A04D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
