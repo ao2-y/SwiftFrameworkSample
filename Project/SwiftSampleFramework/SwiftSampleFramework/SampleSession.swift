@@ -26,23 +26,32 @@ class SampleSession: NSObject {
     func loading(url:NSURL!, completionHandler:(data:NSData?, response:NSURLResponse?, error:NSError?)->Void) {
         let task:NSURLSessionTask = session.dataTaskWithURL(url, completionHandler: completionHandler);
         task.resume();
+        
     }
 }
 
-protocol SampleObjectDelegte:class {
-    func loadFinishCallback(result:NSDictionary?);
-    func loadErrorCallback(error:NSError?);
+@objc public protocol SampleObjectDelegte {
+   func loadFinishCallback(result:NSDictionary!);
+   func loadErrorCallback(error:NSError?);
 }
 
 public class SampleObject: NSObject {
     
-    weak var delegate:SampleObjectDelegte?;
+    var delegate:SampleObjectDelegte!;
     
     public var limit:Int! = 10;
     public var country:String! = "jp";
     
-    init(delegate:SampleObjectDelegte!) {
+    public init(delegate:SampleObjectDelegte) {
+        super.init();
         self.delegate = delegate;
+    }
+    
+    @available(*, unavailable, message="init is unavailable, use initWithDelegate")
+    override init() {
+        // @available(*, unavailable, message="init is unavailable, use initWithDelegate")で抑止しているが、
+        // Frameworkにすると抑止できないため、エラーメッセージを表示しクラッシュさせることで使用禁止とさせる
+        fatalError("init is unavailable, use initWithDelegate")
     }
     
     public func load() -> Bool {
@@ -62,6 +71,17 @@ public class SampleObject: NSObject {
         } catch let jsonError as NSError {
             delegate!.loadErrorCallback(jsonError);
         }
+    }
+    
+    func successCallback(result:NSDictionary) {
+        dispatch_async(dispatch_get_main_queue(), {
+            self.delegate.loadFinishCallback(result);
+        });
+    }
+    func errorCallback(error:NSError) {
+        dispatch_async(dispatch_get_main_queue(), {
+            self.delegate.loadErrorCallback(error);
+        });
     }
     
 }
